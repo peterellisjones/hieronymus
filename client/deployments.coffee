@@ -9,7 +9,10 @@ Meteor.startup () ->
 @poll_bosh_vms = () ->
   if loggedIn
     console.log "synchronizing..."
-    sync_deployments(sync_deployment_vms)
+    Session.set('loading', true)
+    sync_deployments () ->
+      sync_deployment_vms () ->
+        Session.set('loading', false)
   else
     console.log "not logged in, skipping sync"
 

@@ -23,3 +23,6 @@ Template.vms.vms = () ->
     else
       vm.job_state_class = 'vm-bad'
     vm
+
+Template.vms.loading = () ->
+  Session.get('loading')
