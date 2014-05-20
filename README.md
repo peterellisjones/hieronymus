@@ -1,6 +1,6 @@
 ![Portrait of Hieronymus Bosch](http://i.imgur.com/MV47cvm.gif)
 
-hieronymus
+Hieronymus
 ==========
 
 Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`
