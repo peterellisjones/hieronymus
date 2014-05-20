@@ -26,7 +26,7 @@ Install meteor with the script from the [site](http://meteor.com)
 CD into the repo and run mrt
 
     $ git clone https://github.com/peterellisjones/hieronymus
-    $ cf hieronymus
+    $ cd hieronymus
     $ NODE_TLS_REJECT_UNAUTHORIZED=0 mrt
     
 (NODE_TLS_REJECT_UNAUTHORIZED=0 is needed if your BOSH director uses self-signed certificates)
