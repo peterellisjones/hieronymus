@@ -5,3 +5,8 @@
 .vm-bad {
   color: #e74c3c;
 }
+
+#loading-spinner {
+  margin-bottom: 20px;
+  text-align: center;
+}
