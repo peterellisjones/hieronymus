@@ -6,8 +6,3 @@ Meteor.methods
     options.followRedirects = false
     res = HTTP.get(url, options)
     res
-
-  post: (args...) ->
-    HTTP.post.apply(null, args)
-  put: (args...) ->
-    HTTP.put.apply(null, args)
