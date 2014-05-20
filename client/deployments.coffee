@@ -57,7 +57,9 @@ taskPoller = (path, options, callback, retries = 100) ->
   return unless retries >= 0
   bosh_get path, options, true, (result) ->
     if result.state in ['queued', 'processing']
-      taskPoller(path, options, callback, retries - 1)
+      repoll = () ->
+        taskPoller(path, options, callback, retries - 1)
+      setTimeout(repoll, 1000)
     else if result.state in ['cancelled', 'error']
       throw res
     else
