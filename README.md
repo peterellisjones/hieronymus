@@ -5,6 +5,8 @@ Hieronymus
 
 Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`. Created with [Craig Furman](https://github.com/craigfurman) as part of the [Pivotal Labs](http://pivotallabs.com/) Hackday May 2014.
 
+If you have a publicly accessible BOSH director and aren't too concerned about security, you can use this app at [hieronymus.meteor.com](http://hieronymus.meteor.com). Otherwise, see below for instructions on how to serve this app locally.
+
 ## Screenshots
 
 ![login screenshot](http://i.imgur.com/twrH9vg.png)
