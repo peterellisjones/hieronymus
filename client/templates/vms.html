@@ -11,8 +11,9 @@
             <th>CID</th>
             <th>IP</th>
             <th>Resource Pool</th>
-            <th>CPU</th>
+            <th>CPU %</th>
             <th>Memory %</th>
+            <th>Persistent Disk %</th>
           </tr>
         </thead>
         <tbody>
@@ -25,8 +26,9 @@
               <td>{{ vm_cid }}</td>
               <td><a href="http://{{ ip }}">{{ ip }}</a></td>
               <td>{{ resource_pool }}</td>
-              <td>{{ cpu }}%</td>
-              <td>{{ mem }}%</td>
+              <td>{{ cpu }}</td>
+              <td>{{ mem }}</td>
+              <td>{{ disk }}</td>
             </tr>
           {{/each}}
         </tbody>
