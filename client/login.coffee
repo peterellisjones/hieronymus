@@ -13,8 +13,8 @@ Template.login.events
       if currentPollHandler?
         Meteor.clearInterval(currentPollHandler)
 
-      poll_bosh_vms
-      handler = Meteor.setInterval(poll_bosh_vms, 10000)
+      poll_bosh_vms()
+      handler = Meteor.setInterval(poll_bosh_vms, 20000)
       Session.set('bosh_poll', handler)
       Router.go('vms')
 

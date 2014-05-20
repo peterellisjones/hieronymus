@@ -3,13 +3,15 @@
 
 Meteor.startup () ->
   poll_bosh_vms()
-  handler = Meteor.setInterval(poll_bosh_vms, 10000)
+  handler = Meteor.setInterval(poll_bosh_vms, 20000)
   Session.set('bosh_poll', handler)
 
 @poll_bosh_vms = () ->
   if loggedIn
     console.log "synchronizing..."
     sync_deployments(sync_deployment_vms)
+  else
+    console.log "not logged in, skipping sync"
 
 
 sync_deployments = (callback = null) ->
