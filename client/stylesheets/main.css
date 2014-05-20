@@ -1,0 +1,7 @@
+table.vms th {
+  cursor: pointer;
+}
+
+table.vms th:hover {
+  text-decoration: underline;
+}
