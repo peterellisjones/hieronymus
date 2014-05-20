@@ -7,7 +7,7 @@ Meteor.startup () ->
   Session.set('bosh_poll', handler)
 
 @poll_bosh_vms = () ->
-  if Session.get('bosh_username')? and Session.get('bosh_password') and Session.get('bosh_target')
+  if loggedIn
     console.log "synchronizing..."
     sync_deployments(sync_deployment_vms)
 

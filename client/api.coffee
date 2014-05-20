@@ -1,4 +1,6 @@
 @bosh_get = (path, options, parseResult, callback) ->
+  return unless loggedIn()
+
   bosh_target = Session.get('bosh_target')
   options or= {}
   options.headers or= {}
