@@ -3,7 +3,7 @@
 Hieronymus
 ==========
 
-Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`
+Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`. Created with [Craig Furman](https://github.com/craigfurman) as part of the [Pivotal Labs](http://pivotallabs.com/) Hackday.
 
 ## Screenshots
 
