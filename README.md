@@ -1,7 +1,7 @@
 hieronymus
 ==========
 
-
+![Portrait of Hieronymus Bosch](http://i.imgur.com/MV47cvm.gif)
 
 Meteor-based GUI for `bosh vms`
 
