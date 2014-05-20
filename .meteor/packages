@@ -6,7 +6,6 @@
 standard-app-packages
 autopublish
 insecure
-bootstrap-3
 iron-router
 coffeescript
 http

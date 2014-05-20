@@ -17,3 +17,12 @@ Template.login.events
       handler = Meteor.setInterval(poll_bosh_vms, 10000)
       Session.set('bosh_poll', handler)
       Router.go('vms')
+
+Template.login.submit_text = () ->
+  comments = [
+    'Oh my BOSH!',
+    "BOSH me I'm Irish!",
+    'Go BOSH yourself!',
+    "If I were a president I'd be George BOSHington!"
+  ]
+  comments[Math.floor(Math.random() * comments.length)]
