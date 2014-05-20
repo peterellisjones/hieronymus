@@ -3,7 +3,7 @@
 Hieronymus
 ==========
 
-Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`. Created with [Craig Furman](https://github.com/craigfurman) as part of the [Pivotal Labs](http://pivotallabs.com/) Hackday.
+Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`. Created with [Craig Furman](https://github.com/craigfurman) as part of the [Pivotal Labs](http://pivotallabs.com/) Hackday May 2014.
 
 ## Screenshots
 
@@ -29,6 +29,6 @@ CD into the repo and run mrt
     $ cd hieronymus
     $ NODE_TLS_REJECT_UNAUTHORIZED=0 mrt
     
-(NODE_TLS_REJECT_UNAUTHORIZED=0 is needed if your BOSH director uses self-signed certificates)
+NODE_TLS_REJECT_UNAUTHORIZED=0 is required if your BOSH director uses self-signed certificates
     
 You should now see hieronymus at [localhost:3000](http://localhost:3000)
