@@ -1,5 +1,5 @@
 @bosh_get = (path, options, parseResult, callback) ->
-  bosh_target = Session.get('bosh_target') or 'https://192.168.50.4:25555'
+  bosh_target = Session.get('bosh_target')
   options or= {}
   options.headers or= {}
   options.headers['Authorization'] = basic_auth_header()
@@ -16,6 +16,6 @@
       callback(res)
 
 basic_auth_header = () ->
-  username = Session.get('bosh_username') or 'admin'
-  password = Session.get('bosh_password') or 'admin'
+  username = Session.get('bosh_username')
+  password = Session.get('bosh_password')
   "Basic #{btoa("#{username}:#{password}")}"

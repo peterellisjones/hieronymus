@@ -2,11 +2,15 @@
 @Vms = new Meteor.Collection("vms", connection: null)
 
 Meteor.startup () ->
-  cb = () ->
+  poll_bosh_vms()
+  handler = Meteor.setInterval(poll_bosh_vms, 10000)
+  Session.set('bosh_poll', handler)
+
+@poll_bosh_vms = () ->
+  if Session.get('bosh_username')? and Session.get('bosh_password') and Session.get('bosh_target')
     console.log "synchronizing..."
     sync_deployments(sync_deployment_vms)
-  cb()
-  Meteor.setInterval(cb, 10000)
+
 
 sync_deployments = (callback = null) ->
   bosh_get '/deployments', {}, true, (deployments) ->
