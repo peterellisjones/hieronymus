@@ -20,7 +20,7 @@ sync_deployments = (callback = null) ->
     callback() if callback?
 
 sync_deployment_vms = (callback = null) ->
-  Deployments.find(name: 'cf-mongodb').forEach (deployment) ->
+  Deployments.find().forEach (deployment) ->
     get_vms_info deployment.name, (vms) ->
       for vm in vms
         vm.deployment_id = deployment._id
