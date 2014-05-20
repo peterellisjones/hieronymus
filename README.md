@@ -1,11 +1,15 @@
+![Portrait of Hieronymus Bosch](http://i.imgur.com/MV47cvm.gif)
+
 hieronymus
 ==========
 
-![Portrait of Hieronymus Bosch](http://i.imgur.com/MV47cvm.gif)
+Meteor-based GUI for [BOSH](https://github.com/cloudfoundry/bosh) command `bosh vms`
 
-Meteor-based GUI for `bosh vms`
+## Screenshots
 
-![screenshot](http://i.imgur.com/9dpgy8o.png)
+![login screenshot](http://i.imgur.com/twrH9vg.png)
+
+![vms screenshot](http://i.imgur.com/9dpgy8o.png)
 
 ## Getting started
 
