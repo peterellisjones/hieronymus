@@ -23,6 +23,8 @@ CD into the repo and run mrt
 
     $ git clone https://github.com/peterellisjones/hieronymus
     $ cf hieronymus
-    $ mrt
+    $ NODE_TLS_REJECT_UNAUTHORIZED=0 mrt
+    
+(NODE_TLS_REJECT_UNAUTHORIZED=0 is needed if your BOSH director uses self-signed certificates)
     
 You should now see hieronymus at [localhost:3000](http://localhost:3000)
