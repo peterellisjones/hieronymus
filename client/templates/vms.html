@@ -1,3 +1,31 @@
 <template name="vms">
   <h2>VMS</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Deployment</th>
+        <th>Agent Id</th>
+        <th>CID</th>
+        <th>State</th>
+        <th>IP</th>
+        <th>Resource Pool</th>
+        <th>CPU</th>
+        <th>Memory %</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each vms}}
+        <tr>
+          <td>{{ deployment_id }}</td>
+          <td>{{ _id }}</td>
+          <td>{{ vm_cid }}</td>
+          <td>{{ job_state }}</td>
+          <td>{{ ip }}</td>
+          <td>{{ resource_pool }}</td>
+          <td>{{ vitals.cpu.total }}%</td>
+          <td>{{ vitals.mem.percent }}%</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </template>
