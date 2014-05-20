@@ -5,10 +5,6 @@ Meteor.methods
     options.headers['Content-Type'] or= 'application/json'
     options.followRedirects = false
     res = HTTP.get(url, options)
-    console.log "*****************************************"
-    console.log url
-    console.log res
-    console.log "*****************************************"
     res
 
   post: (args...) ->
