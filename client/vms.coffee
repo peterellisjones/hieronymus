@@ -8,7 +8,9 @@ Template.vms.vms = () ->
     else
       vm.cpu = '-'
       vm.mem = '-'
-    vm
 
-Template.vms.rendered = () ->
-  $('table.vms').tablesorter()
+    if vm.job_state in ['running']
+      vm.job_state_class = 'vm-good'
+    else
+      vm.job_state_class = 'vm-bad'
+    vm

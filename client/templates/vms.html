@@ -3,10 +3,11 @@
   <table class="vms table table-striped">
     <thead>
       <tr>
+        <th>State</th>
+        <th>Name</th>
         <th>Deployment</th>
         <th>Agent Id</th>
         <th>CID</th>
-        <th>State</th>
         <th>IP</th>
         <th>Resource Pool</th>
         <th>CPU</th>
@@ -16,10 +17,11 @@
     <tbody>
       {{#each vms}}
         <tr>
+          <td class="{{ job_state_class }}">{{ job_state }}</td>
+          <td>{{ job_name }}</td>
           <td>{{ deployment_id }}</td>
           <td>{{ _id }}</td>
           <td>{{ vm_cid }}</td>
-          <td>{{ job_state }}</td>
           <td><a href="http://{{ ip }}">{{ ip }}</a></td>
           <td>{{ resource_pool }}</td>
           <td>{{ cpu }}%</td>
